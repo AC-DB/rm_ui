@@ -25,6 +25,12 @@ static void my_application_activate(GApplication* application) {
   GtkWindow* window =
       GTK_WINDOW(gtk_application_window_new(GTK_APPLICATION(application)));
 
+  // 设置窗口固定大小
+  // gtk_window_set_default_size(window, 3000, 1200);
+  
+  // 禁用窗口大小调整
+  // gtk_window_set_resizable(window, FALSE);
+
   // Use a header bar when running in GNOME as this is the common style used
   // by applications and is the setup most users will be using (e.g. Ubuntu
   // desktop).
